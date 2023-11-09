@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 
-function Navbar({setPage}){
+function Navbar(){
     return (
         <>
             <div className="nav">
