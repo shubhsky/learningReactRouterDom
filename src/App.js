@@ -17,11 +17,11 @@ function App() {
           element:<Home/>
         },
         {
-          path: '/about',
+          path: 'about',
           element:<About/>
         },
         {
-          path: '/items',
+          path: 'items',
           element:<Items/>
         },
       ],
