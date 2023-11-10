@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Items from "./pages/Items";
 import Navbar from "./Navbar/navbar";
 import ItemDetails from "./pages/itemsDetails";
+import { ErrorPage } from "./pages/errorPage";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     {
       path: '/',
       element:<Navbar/>,
+      errorElement:<ErrorPage/>,
       children:[
         {
           // path: '/',
