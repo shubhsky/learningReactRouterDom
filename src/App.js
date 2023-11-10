@@ -23,12 +23,19 @@ function App() {
         },
         {
           path: 'items',
-          element:<Items/>
+          children:[
+            {
+              // path: '/',
+              index:true,
+              element:<Items/>
+            },
+            {
+              path:':itemId',
+              element:<ItemDetails/>
+            }
+          ]
         },
-        {
-          path:'items/:itemId',
-          element:<ItemDetails/>
-        }
+        
       ],
     },
   ])
