@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from "./pages/About";
 import Items from "./pages/Items";
 import Navbar from "./Navbar/navbar";
+import ItemDetails from "./pages/itemsDetails";
 
 function App() {
 
@@ -24,6 +25,10 @@ function App() {
           path: 'items',
           element:<Items/>
         },
+        {
+          path:'items/:itemId',
+          element:<ItemDetails/>
+        }
       ],
     },
   ])
