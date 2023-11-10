@@ -1,16 +1,22 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import { ITEMS } from "../data/itemsData";
 
 export default function ItemDetails(){
 
-    const param = useParams();
+    const {itemId} = useParams();
+    console.log(itemId)
     // console.log(param);
+
+    const item = ITEMS.find((item)=>item.id ===itemId);
+    // console.log(item)
 
     return(
         <>
         <main>
             <h1>Item Details</h1>
-            <h2>{param.itemId}</h2>
         </main>
+        <h2>{item.title}</h2>
+        <h3>{item.description}</h3>
         </>
     )
 }
